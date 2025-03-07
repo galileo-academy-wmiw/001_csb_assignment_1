@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 using System.Linq;
 public class Library 
+=======
+public class Library
+>>>>>>> 80c3c614ba9e2fdfe3cbdfb28ea0aad3afb21af7
 {
     public List<Book> Books { get; set; }
 
@@ -11,8 +15,11 @@ public class Library
     public void AddBook(Book book)
     {
         // Implementation here
+<<<<<<< HEAD
         Books.Add(book);
         
+=======
+>>>>>>> 80c3c614ba9e2fdfe3cbdfb28ea0aad3afb21af7
     }
 
     /// Removes a book from the library based on its ISBN.
@@ -20,6 +27,7 @@ public class Library
     public void RemoveBook(string isbn)
     {
         // Implementation here
+<<<<<<< HEAD
 
         var bookToRemove = Books.FirstOrDefault(book => book.ISBN == isbn);
         if (bookToRemove != null)
@@ -30,6 +38,8 @@ public class Library
         {
             Console.WriteLine("Boek met ISBN {0} niet gevonden.", isbn);
         }
+=======
+>>>>>>> 80c3c614ba9e2fdfe3cbdfb28ea0aad3afb21af7
     }
 
     /// Searches for books in the library that match the given query.
@@ -38,6 +48,7 @@ public class Library
     public List<Book> SearchBooks(string query)
     {
         // Implementation here
+<<<<<<< HEAD
         var searchResults = new List<Book>();
         foreach (var book in Books)
         {
@@ -61,12 +72,15 @@ public class Library
         }
 
 
+=======
+>>>>>>> 80c3c614ba9e2fdfe3cbdfb28ea0aad3afb21af7
     }
 
     /// Lists all books in the library, sorted by a certain criterion (e.g. title).
     public void ListBooks()
     {
         // Implementation here
+<<<<<<< HEAD
         var sortedBooks = Books.OrderBy(book => book.Title);
         foreach (var book in sortedBooks)
         {
@@ -77,4 +91,7 @@ public class Library
     }
 
 
+=======
+    }
+>>>>>>> 80c3c614ba9e2fdfe3cbdfb28ea0aad3afb21af7
 }

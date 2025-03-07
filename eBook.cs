@@ -13,6 +13,7 @@ public override void DisplayDetails()
 
     public void Read()
     {
+<<<<<<< HEAD
         Console.WriteLine($"Wordt nu gelezen {Title}...");
     }
 
@@ -20,5 +21,8 @@ public override void DisplayDetails()
     public eBook(string title, string author, string isbn, int publicationYear, string genre, int fileSize) : base(title, author, isbn, publicationYear, genre)
     {
         FileSize = fileSize;
+=======
+        Console.WriteLine($"Reading {Title}...");
+>>>>>>> 80c3c614ba9e2fdfe3cbdfb28ea0aad3afb21af7
     }
 }

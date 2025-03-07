@@ -5,7 +5,10 @@
 // Implement the IReadable-interface in the Book - class: 
 // Methoden: Read(): a method which can be implemented by the Book-class, to indicate the book is being read (e.g. "Reading [Booktitle]...").
 
+<<<<<<< HEAD
 public class Book : IReadable
+=======
+
 {
     public string Title { get; set; }
     public string Author { get; set; }
@@ -32,6 +35,7 @@ public class Book : IReadable
     {
         // Method implementation goes here
     }
+<<<<<<< HEAD
 
   // Constructor
     public Book(string title, string author, string isbn, int publicationYear, string genre)
@@ -47,9 +51,13 @@ public class Book : IReadable
     {
         Console.WriteLine($"Wordt nu gelezen {Title}...");
     }
+
+
 }
 
 interface IReadable
 {
     void Read();
+
 }
+
